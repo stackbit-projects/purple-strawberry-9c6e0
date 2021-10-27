@@ -5,6 +5,7 @@ import _ from 'lodash';
 import { Link, withPrefix, classNames, getPageUrl } from '../utils';
 import Action from './Action';
 import Icon from './Icon';
+import { LibraryTemplatePlugin } from 'webpack';
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -95,7 +96,7 @@ export default class Header extends React.Component {
                         }
                         {hasNav && !_.isEmpty(navLinks) && this.renderNavLinks(navLinks, pageUrl)}
                     </nav>
-                    <Li
+                    <LibraryTemplatePlugin/>
                 </div>
             </header>
         );
